@@ -5,7 +5,7 @@
 
 Config = {
     -- MENU OPTIONS
-    MenuLanguage = 'en', -- Change the language of the menu here!.
+    MenuLanguage = 'ja', -- Change the language of the menu here!.
     DebugDisplay = false, -- Set this to true to enable some extra prints.
     EnableCancelKeybind = true,  -- Set this to false if you have something else on X, and then just use /e c to cancel emotes.
     CancelEmoteKey = 'x', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/.
@@ -56,7 +56,7 @@ Config = {
     WalkingStylesEnabled = true, -- You can disable the Walking Styles menu here.
     PersistentWalk = true, -- Saves walkstyles style to client via KVP and applies them upon joining any server with RPEmotes installed. This is also reapplied upon exiting a vehicle.
     SharedEmotesEnabled = true, -- You can disable the Shared Emotes here.
-    AdultEmotesDisabled = false, -- You can disable the Adult Emotes here. By default, this is set to false for obvious reasons.
+    AdultEmotesDisabled = true, -- You can disable the Adult Emotes here. By default, this is set to false for obvious reasons.
     AnimalEmotesEnabled = true, -- You can disable the Animal Emotes here.
 	
 	

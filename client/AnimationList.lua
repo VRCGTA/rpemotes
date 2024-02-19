@@ -17516,78 +17516,78 @@ RP.PropEmotes = {
             EmoteMoving = true
         }
     },
-    ["shit"] = {
-        "missfbi3ig_0",
-        "shit_loop_trev",
-        "Shit",
-        AnimationOptions = {
-            Prop = "prop_toilet_roll_01",
-            PropBone = 28422,
-            PropPlacement = {
-                0.0700,
-                -0.02000,
-                -0.2100,
-                0,
-                0,
-                0.0,
-                0.0
-            },
-            EmoteLoop = true,
-            EmoteMoving = false,
-            PtfxAsset = "scr_amb_chop",
-            PtfxName = "ent_anim_dog_poo",
-            PtfxNoProp = true,
-            PtfxBone = 11816,
-            PtfxPlacement = {
-                0.0,
-                0.0,
-               -0.1,
-                0.0,
-                0.0,
-                0.0,
-                1.3
-            },
-            PtfxInfo = Config.Languages[Config.MenuLanguage]['poop'],
-            PtfxWait = 0,
-            PtfxCanHold = true
-        }
-    },
-    ["shit2"] = {
-        "missfbi3ig_0",
-        "nill",
-        "Shit While Walking",
-        AnimationOptions = {
-            Prop = "prop_toilet_roll_01",
-            PropBone = 28422,
-            PropPlacement = {
-                0.0700,
-                -0.02000,
-                -0.2100,
-                0,
-                0,
-                0.0,
-                0.0
-            },
-            EmoteLoop = true,
-            EmoteMoving = true,
-            PtfxAsset = "scr_amb_chop",
-            PtfxName = "ent_anim_dog_poo",
-            PtfxNoProp = true,
-            PtfxBone = 11816,
-            PtfxPlacement = {
-                0.0,
-                0.0,
-               -0.1,
-                0.0,
-                0.0,
-                0.0,
-                1.4
-            },
-            PtfxInfo = Config.Languages[Config.MenuLanguage]['poop'],
-            PtfxWait = 0,
-            PtfxCanHold = true
-        }
-    },
+    -- ["shit"] = {
+    --     "missfbi3ig_0",
+    --     "shit_loop_trev",
+    --     "Shit",
+    --     AnimationOptions = {
+    --         Prop = "prop_toilet_roll_01",
+    --         PropBone = 28422,
+    --         PropPlacement = {
+    --             0.0700,
+    --             -0.02000,
+    --             -0.2100,
+    --             0,
+    --             0,
+    --             0.0,
+    --             0.0
+    --         },
+    --         EmoteLoop = true,
+    --         EmoteMoving = false,
+    --         PtfxAsset = "scr_amb_chop",
+    --         PtfxName = "ent_anim_dog_poo",
+    --         PtfxNoProp = true,
+    --         PtfxBone = 11816,
+    --         PtfxPlacement = {
+    --             0.0,
+    --             0.0,
+    --            -0.1,
+    --             0.0,
+    --             0.0,
+    --             0.0,
+    --             1.3
+    --         },
+    --         PtfxInfo = Config.Languages[Config.MenuLanguage]['poop'],
+    --         PtfxWait = 0,
+    --         PtfxCanHold = true
+    --     }
+    -- },
+    -- ["shit2"] = {
+    --     "missfbi3ig_0",
+    --     "nill",
+    --     "Shit While Walking",
+    --     AnimationOptions = {
+    --         Prop = "prop_toilet_roll_01",
+    --         PropBone = 28422,
+    --         PropPlacement = {
+    --             0.0700,
+    --             -0.02000,
+    --             -0.2100,
+    --             0,
+    --             0,
+    --             0.0,
+    --             0.0
+    --         },
+    --         EmoteLoop = true,
+    --         EmoteMoving = true,
+    --         PtfxAsset = "scr_amb_chop",
+    --         PtfxName = "ent_anim_dog_poo",
+    --         PtfxNoProp = true,
+    --         PtfxBone = 11816,
+    --         PtfxPlacement = {
+    --             0.0,
+    --             0.0,
+    --            -0.1,
+    --             0.0,
+    --             0.0,
+    --             0.0,
+    --             1.4
+    --         },
+    --         PtfxInfo = Config.Languages[Config.MenuLanguage]['poop'],
+    --         PtfxWait = 0,
+    --         PtfxCanHold = true
+    --     }
+    -- },
     ["puke"] = { -- Custom Emotes By Darks Animations Provided To RPEmotes 01/08/2023
     "cross_arms@dark",
     "cross_arms_clip",
