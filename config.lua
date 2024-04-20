@@ -93,7 +93,7 @@ Config = {
 
 	-- BINOCULAR OPTIONS
     BinocularsEnabled = true, -- Enable / disable the /binoculars command in chat. This is enabled by default as it is an integral part of RPEmotes
-    AllowVisionsToggling = true, -- If set to true, you'll be able to toggle between different vision modes in the binoculars
+    AllowVisionsToggling = false, -- If set to true, you'll be able to toggle between different vision modes in the binoculars
     
     -- NEWS CAMERA OPTIONS
     NewscamEnabled = true, -- If set to true, the /newscam command will be enabled. This is enabled by default as it is an integral part of RPEmotes
