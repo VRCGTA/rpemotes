@@ -567,9 +567,27 @@ function EmoteMenuStart(args, hard, textureVariation)
     end
 end
 
+local function canEmoteStart()
+    if IsPedInjured(PlayerPedId()) or IsPedInMeleeCombat(PlayerPedId()) or IsPedRagdoll(PlayerPedId()) or IsPedGettingUp(PlayerPedId()) then
+        return false
+    end
+    if IsPedInAnyVehicle(PlayerPedId(), false) then
+       return true
+    end
+
+    QBCore = exports['qb-core']:GetCoreObject()
+    PlayerData = QBCore.Functions.GetPlayerData()
+
+    if PlayerData.metadata['inlaststand'] or PlayerData.metadata['isdead'] then
+        return false
+    end
+
+    return not (not IsPedOnFoot(PlayerPedId()) or IsPedJumping(PlayerPedId()))
+end
+
 function EmoteCommandStart(source, args, raw)
     if #args > 0 then
-        if IsEntityDead(PlayerPedId()) or IsPedRagdoll(PlayerPedId()) or IsPedGettingUp(PlayerPedId()) or IsPedInMeleeCombat(PlayerPedId()) then
+        if not canEmoteStart() then
             TriggerEvent('chat:addMessage', {
                 color = {255, 0, 0},
                 multiline = true,
