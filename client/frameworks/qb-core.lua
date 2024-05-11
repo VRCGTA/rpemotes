@@ -40,50 +40,50 @@ AddEventHandler('onResourceStart', function(resource)
 end)
 
 function CanUseFavKeyBind()
-    return not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead']
+    return not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead
 end
 
 -- Added events
 RegisterNetEvent('animations:client:PlayEmote', function(args)
-    if not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead'] then
+    if not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead then
         EmoteCommandStart(source, args)
     end
 end)
 
 if Config.SqlKeybinding then
     RegisterNetEvent('animations:client:BindEmote', function(args)
-        if not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead'] then
+        if not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead then
             EmoteBindStart(source, args)
         end
     end)
 
     RegisterNetEvent('animations:client:EmoteBinds', function()
-        if not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead'] then
+        if not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead then
             EmoteBindsStart()
         end
     end)
 end
 
 RegisterNetEvent('animations:client:EmoteMenu', function()
-    if not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead'] then
+    if not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead then
         OpenEmoteMenu()
     end
 end)
 
 RegisterNetEvent('animations:client:ListEmotes', function()
-    if not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead'] then
+    if not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead then
         EmotesOnCommand()
     end
 end)
 
 RegisterNetEvent('animations:client:Walk', function(args)
-    if not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead'] then
+    if not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead then
         WalkCommandStart(source, args)
     end
 end)
 
 RegisterNetEvent('animations:client:ListWalks', function()
-    if not PlayerData.metadata['inlaststand'] and not PlayerData.metadata['isdead'] then
+    if not PlayerData.condition.in_last_stand and not PlayerData.condition.in_dead then
         WalksOnCommand()
     end
 end)
